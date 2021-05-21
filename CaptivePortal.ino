@@ -17,7 +17,7 @@ String responseHTML = ""
 void setup() {
   WiFi.mode(WIFI_AP);
   WiFi.softAPConfig(apIP, apIP, IPAddress(255, 255, 255, 0));
-  WiFi.softAP("If u read this, u lost!", "ViVonZULUL");
+  WiFi.softAP("esp8266", "123456789");
   
   dnsServer.start(DNS_PORT, "*", apIP);
 
