@@ -12,12 +12,12 @@ String responseHTML = ""
                       "<!DOCTYPE html><html lang='en'><head>"
                       "<meta name='viewport' content='width=device-width'>"
                       "<title>CaptivePortal</title></head><body>"
-                      "<h1>Bruce U VON</h1></body></html>";
+                      "<h1>Hello!</h1></body></html>";
                       
 void setup() {
   WiFi.mode(WIFI_AP);
   WiFi.softAPConfig(apIP, apIP, IPAddress(255, 255, 255, 0));
-  WiFi.softAP("esp8266", "123456789");
+  WiFi.softAP("esp8266-Captive Portal", "123456789");
   
   dnsServer.start(DNS_PORT, "*", apIP);
 
