@@ -13,7 +13,7 @@ String responseHTML = ""
                       "<meta name='viewport' content='width=device-width'>"
                       "<title>CaptivePortal</title></head><body>"
                       "<h1>Bruce U VON</h1></body></html>";
-
+                      
 void setup() {
   WiFi.mode(WIFI_AP);
   WiFi.softAPConfig(apIP, apIP, IPAddress(255, 255, 255, 0));
